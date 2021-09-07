@@ -318,6 +318,7 @@ template {
   display: none; }
 
 .button {
+  font-size: 0.93rem;
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
@@ -339,7 +340,35 @@ template {
 .container {
   width: 85%;
   max-width: 1256px;
-  margin: auto; }
+  margin: 0 auto; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1rem; }
+
+img {
+  max-width: 100%; }
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive; }
+  .section-title__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-title__image::before, .section-title__image::after {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background-color: #E3B873;
+      margin: 10px; }
 
 .header {
   position: fixed;
@@ -363,7 +392,7 @@ template {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.85rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -386,14 +415,18 @@ template {
   .hero::before {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
     position: relative;
-    max-width: 670px; }
+    max-width: 47.85rem;
+    margin-left: 4.28rem; }
   .hero__text {
-    font-size: 22px;
+    margin: 20px 0 40px;
+    font-size: 1.57rem;
     max-width: 500px; }
   .hero__button {
     margin-right: 20px; }
@@ -410,8 +443,8 @@ template {
     align-items: center;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
     background-color: #131313;
     text-transform: uppercase;
     color: #fff;
@@ -448,14 +481,99 @@ template {
 .title {
   margin: 0;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   text-transform: uppercase;
-  font-size: 40px; }
+  font-size: 2.857rem; }
   .title--primary {
     color: #E3B873; }
 
-*, *:before, *:after {
-  box-sizing: border-box; }
+.types__section-title {
+  margin-bottom: 1rem; }
 
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -8rem;
+  padding: 1.79rem 2.14rem;
+  max-width: 23.6rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem; }
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+  margin-bottom: 2.5rem; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.214rem 1.285rem; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  .nav__item {
+    margin-right: 1rem; } }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__text {
+    margin-left: 0; } }
+
+@media screen and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+      margin-right-color: #fff;
+      margin-right-text-decoration: none; }
+  .contacts__button {
+    display: none; }
+  .title {
+    font-size: 1.64rem; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__content {
+    max-width: 22.86rem; }
+  .hero__text {
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem; } }
+
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none; } }
