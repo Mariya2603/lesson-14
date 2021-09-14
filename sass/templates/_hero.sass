@@ -52,6 +52,29 @@
       border: 2px solid $primary
       border-radius: 50%
       margin-left: 12px
+  &__scroll-up
+    position: fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    right: 0
+    bottom: 0
+    min-width: 17.6rem
+    min-height: 6.92rem
+    background-color: $dark
+    text-transform: uppercase
+    color: $light
+    // display: none
+    text-decoration: none
+    cursor: pointer
+    z-index: 999
+    opacity: 0
+    visibility: hidden
+    transition: 0.3s
+    &.active
+      // display: flex
+      opacity: 1
+      visibility: visible
 .instagram
   display: flex
   background-color: $dark
@@ -79,3 +102,5 @@
   font-size: 2.857rem
   &--primary
     color: $primary
+
+

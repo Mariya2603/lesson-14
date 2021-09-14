@@ -490,6 +490,27 @@ img {
       border: 2px solid #E3B873;
       border-radius: 50%;
       margin-left: 12px; }
+  .hero__scroll-up {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    bottom: 0;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
+    background-color: #131313;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s; }
+    .hero__scroll-up.active {
+      opacity: 1;
+      visibility: visible; }
 
 .instagram {
   display: flex;
